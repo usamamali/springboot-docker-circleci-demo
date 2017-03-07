@@ -21,7 +21,7 @@ test:
 
 deployment:
   hub:
-    branch: [sb-ci-pipeline]
+    branch: [sb-docker-circleci-example]
     commands:
       - docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
       - docker tag lprates/sbdocker $DOCKER_HUB_USER_ID/sbdocker:$CIRCLE_SHA1
